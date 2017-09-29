@@ -4,9 +4,6 @@
     <main>
       HOME
     </main>
-    <div>
-      {{userInfos}}
-    </div>
   </div>
 </template>
 
@@ -21,12 +18,8 @@ export default {
   },
   data() {
     return {
+      message: "{{ name }}"
     };
-  },
-  computed: {
-    ...mapGetters({
-      userInfos: 'userInfos',
-    }),
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <header class="topbar">
-    <span>NxT Retail</span>
+    <span>{{ name }}</span>
     <router-link to="Login" v-if="!isLogged">Login</router-link>
     <router-link to="Logout" v-else>Logout</router-link>
   </header>
