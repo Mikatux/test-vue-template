@@ -14,7 +14,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init pwa my-project
+$ vue init Mikatux/test-vue-template my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -44,17 +44,6 @@ If port 8080 is already in use on your machine you must change the port number i
   - All static assets compiled with version hashes for efficient long-term caching, and a production `index.html` is auto-generated with proper URLs to these generated assets.
   - Use `npm run build --report`to build with bundle size analytics.
   - Generates a Service Worker for offline caching your static assets using [sw-precache-webpack-plugin](https://www.npmjs.com/package/sw-precache-webpack-plugin)
-
-- `npm run unit`: Unit tests run in PhantomJS with [Karma](http://karma-runner.github.io/0.13/index.html) + [Mocha](http://mochajs.org/) + [karma-webpack](https://github.com/webpack/karma-webpack).
-  - Supports ES2015+ in test files.
-  - Supports all webpack loaders.
-  - Easy mock injection.
-
-- `npm run e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
-  - Run tests in multiple browsers in parallel.
-  - Works with one command out of the box:
-    - Selenium and chromedriver dependencies automatically handled.
-    - Automatically spawns the Selenium server.
 
 ### Fork It And Make Your Own
 

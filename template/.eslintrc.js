@@ -9,18 +9,11 @@ module.exports = {
   env: {
     browser: true,
   },
-  {{#if_eq lintConfig "standard"}}
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
-  {{/if_eq}}
-  {{#if_eq lintConfig "airbnb"}}
   extends: 'airbnb-base',
-  {{/if_eq}}
   // required to lint *.vue files
   plugins: [
     'html'
   ],
-  {{#if_eq lintConfig "airbnb"}}
   // check if imports actually resolve
   'settings': {
     'import/resolver': {
@@ -29,16 +22,8 @@ module.exports = {
       }
     }
   },
-  {{/if_eq}}
   // add your custom rules here
   'rules': {
-    {{#if_eq lintConfig "standard"}}
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'js': 'never',
@@ -48,8 +33,10 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
     }],
-    {{/if_eq}}
+    // allow Reassignment of Function Parameters
+    'no-param-reassign': ["error", { "props": false }],
     // allow debugger during development
+    'no-console': process.env.NODE_ENV === 'production' ? ["error", { allow: ["warn", "error"] }] : 0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
 }
