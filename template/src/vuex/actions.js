@@ -1,10 +1,8 @@
 import axios from 'axios';
-import store from './store';
 import * as types from './mutation-types';
 import config from '../config';
 
-const accountEndpoint = `${config.API_URL}/me`;
-const loginEndpoint = `${config.API_URL}/auth/token`;
+const loginEndpoint = `${config.API_URL}/login`;
 
 export const login = ({ commit }, JWT) => new Promise((resolve, reject) => {
   axios.get(loginEndpoint, { headers: { Authorization: `Bearer ${JWT}` } })
@@ -21,8 +19,7 @@ export const logout = ({ commit }) => new Promise((resolve, reject) => {
   try {
     commit(types.LOG_OUT);
     resolve();
-  }
-  catch (e) {
+  } catch (e) {
     reject(e);
   }
 });
