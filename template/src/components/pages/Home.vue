@@ -5,7 +5,7 @@
       HOME
     </main>
     <div>
-      \{{projectTitle}}
+      \{{projectDescription}}
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      projectTitle: '{{ name }}',
+      projectDescription: '{{ description }}',
     };
   },
 };
