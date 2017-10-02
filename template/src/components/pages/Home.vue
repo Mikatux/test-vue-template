@@ -4,6 +4,9 @@
     <main>
       HOME
     </main>
+    <div>
+      \{{projectTitle}}
+    </div>
   </div>
 </template>
 
@@ -18,7 +21,7 @@ export default {
   },
   data() {
     return {
-      message: "{{ name }}"
+      projectTitle: "{{ name }}"
     };
   },
 };
