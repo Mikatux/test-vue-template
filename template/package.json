@@ -1,8 +1,8 @@
 {
-  "name": "nxt-retail",
+  "name": "{{name}}",
   "version": "0.1.0",
-  "description": "JLL Nxt-Retail",
-  "author": "Alexis Soto <alexis@latelier.co>",
+  "description": "{{description}}",
+  "author": "{{author}}",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

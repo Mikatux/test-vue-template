@@ -17,7 +17,7 @@ module.exports = {
       "type": "string",
       "required": false,
       "message": "Project description",
-      "default": "Une description cool du projet"
+      "default": "A cool description of your project"
     },
     "author": {
       "type": "string",
