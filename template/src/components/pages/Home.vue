@@ -12,7 +12,6 @@
 
 <script>
 import topbar from '@/components/Topbar';
-import { mapGetters } from 'vuex';
 
 export default {
   name: 'home',
@@ -21,7 +20,7 @@ export default {
   },
   data() {
     return {
-      projectTitle: "{{ name }}"
+      projectTitle: '{{ name }}',
     };
   },
 };
