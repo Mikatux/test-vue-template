@@ -28,5 +28,9 @@ export default {
 .topbar {
   display: flex;
   justify-content: space-between;
+  background-color: "#35495E";
+  height: 64px;
+  width: 100%;
+  color: #FEFEFE;
 }
 </style>
