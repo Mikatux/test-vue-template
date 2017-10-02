@@ -2,7 +2,7 @@
   <div class="home">
     <topbar></topbar>
     <main class="main">
-      <img src="./assets/logo.png" alt="L'Atelier">
+      <img src="@/assets/logo.png" alt="L'Atelier">
       <div>
         <div class="text">{{ msg }}</div>
         <div class="subTitle">Essential Links</div>
