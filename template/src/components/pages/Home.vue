@@ -2,7 +2,7 @@
   <div class="home">
     <topbar></topbar>
     <main class="main">
-      <img src="@/assets/logo.png" alt="L'Atelier">
+      <img :src="logo" alt="L'Atelier">
       <div>
         <div class="text">{{ msg }}</div>
         <div class="subTitle">Essential Links</div>
@@ -26,7 +26,9 @@
 </template>
 
 <script>
+
 import topbar from '@/components/Topbar';
+import logo from '@/assets/logo';
 
 export default {
   name: 'home',
@@ -36,6 +38,7 @@ export default {
   data() {
     return {
       msg: '{{ description }}',
+      logo
     };
   },
 };
